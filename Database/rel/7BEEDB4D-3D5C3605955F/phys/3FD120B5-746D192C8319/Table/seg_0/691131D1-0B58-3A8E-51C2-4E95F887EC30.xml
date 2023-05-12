@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Categorie" directorySegmentName="seg_0" id="691131D1-0B58-3A8E-51C2-4E95F887EC30">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Denumire_Cat" id="10E0220B-751C-96C6-300C-06BA33872993">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Cat" id="2732A258-2D09-6632-0ACF-56F001E50A47">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="Descriere" id="D23D9A86-3445-34BE-23DD-64F461D0A9F5">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Categorie_PK" id="705DEACD-8BB6-0A1F-45F4-7B648C90FE80">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="cat_denumire_uk" id="0610F0AA-D9B4-B136-4D9D-32D2BAFA64BF">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="val_prop" directorySegmentName="seg_0" id="1C99D1A7-500B-A980-E2FA-86104544E7F0">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Valoare" id="312080F2-E903-3C4A-8093-44234B3E249F">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_val_prop" id="D92092DA-376C-A52F-CDAC-D0015B690500">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="val_prop_PK" id="47CCA2AE-7C47-F5D2-B236-401F76E51EF6">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="val_prop_valoare_uk" id="35A707D5-21A5-19A5-F313-A3AF379A8AC2">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

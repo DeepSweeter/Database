@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Detalii" directorySegmentName="seg_0" id="FA99FEC4-2F24-3B3A-3BDF-9061753953BB">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Poza" id="493A77B4-DC47-D700-A89E-39641A205E9F">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Descriere" id="7F9CC78E-D0B8-B86B-B245-B79AACE75EAA">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Desc" id="DC608DDA-EB36-C0A7-610B-FDA57D1DC07D">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Detalii_PK" id="8D995F9F-419F-4218-FF9D-7EEDC59D1063">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

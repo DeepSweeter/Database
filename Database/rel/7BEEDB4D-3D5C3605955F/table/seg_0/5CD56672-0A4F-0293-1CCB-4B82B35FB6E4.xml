@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5CD56672-0A4F-0293-1CCB-4B82B35FB6E4" name="Producator">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>2E35C615-4657-BB75-BFA8-EEEE071C4921</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Producator" id="03A791BC-95B7-73BA-5382-675AF751B532">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>DABE0E76-9B32-500F-8E9C-47EBEB9205FF</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Denumire_Producator" id="F490C636-C425-65F8-8F5C-4309C651D918">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>95EC22B1-634A-ADD7-3095-FE0BDC849588</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<constraintName>producator_denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Denumire_Producator)&gt;3 and regexp_like(Denumire_Producator , &apos;^+[ [:alpha:]_]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tara_Producator" id="CC86E0F9-60E2-CD1D-2CCF-69DB926B0B3E">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>DB60FFEF-7C21-9799-FA6D-A8010F37C747</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<constraintName>producator_tara_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(tara_producator, &apos;[[:alpha:]]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descriere" id="B277FAE7-F8E5-3DC6-E52B-878A5C0ED0BB">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>7EF4C83E-EA6B-5BC7-F3D4-F4AB0E6CA361</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3321482-48BF-C70E-B1F7-74528253C88A" name="Producator_PK">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>C4792C9A-934B-FABB-27D9-BA9F945CA27A</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03A791BC-95B7-73BA-5382-675AF751B532"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74EB7B39-33E5-5A6D-15D7-3A50C15B23E9" name="producator_denumire_uk">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>B83FBF9F-176C-5E75-4ABF-3D92155DE757</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F490C636-C425-65F8-8F5C-4309C651D918"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

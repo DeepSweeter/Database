@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13DED5C4-C7E0-ABAD-F1CB-81DEEB87FC9F" name="Produse">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>3A19CAE7-4B01-0ACD-C29F-897173EFFACB</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Prod" id="42466A9A-5A96-F312-90C8-128BB94F0A9D">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>B2FD4203-13D8-E6D6-FC93-C1E3927E2573</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Denumire_Prod" id="D179B1F0-9ACE-289A-1C8D-41072215E445">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>65849C7D-2357-90CC-A04E-F01538126E26</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<constraintName>produse_denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Denumire_Prod)&gt;1 and regexp_like(Denumire_Prod , &apos;^+[ [:alnum:]_]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pret" id="7C6F784A-5F0E-8C69-7655-9C5AAE9B9FC1">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>50689120-EBA2-0493-9A8C-1D258D414239</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stoc" id="EEDA90F3-E6F5-BE53-454D-73E25CB8E98E">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>8710F7C4-D4BB-18D6-332B-ABD0101F8F02</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Sub" id="24A910BC-2A78-6B5D-53D3-80FCBCF7E3EC">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>E09FB8D0-488E-5C66-F83E-CE89B4CE1E1E</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF2AC89F-5B24-1F0E-3A66-43A26443E7B8" referredColumn="0EF52CBB-D934-A096-83A8-362582F5F012"/>
+</associations>
+</Column>
+<Column name="ID_Producator" id="3ABC2EBA-9500-84AC-086C-5BFD946B7FCD">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>B807E1E3-B853-CA5E-936E-63BABB61FA9A</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62CF56FA-27E1-74F4-6946-AB308B26B03F" referredColumn="03A791BC-95B7-73BA-5382-675AF751B532"/>
+</associations>
+</Column>
+<Column name="ID_Desc" id="B01F823D-98B0-8F8C-6B9F-BBC251B0E491">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>3EF92909-46FC-D0E6-481A-990E1C1FBF18</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C90604D-DE17-7290-B86D-F0C9D7424966" referredColumn="DC608DDA-EB36-C0A7-610B-FDA57D1DC07D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A0011F8-241A-A4C7-C626-CBEE17BA8AED" name="Produse_PK">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>AA899285-6E9F-B0B6-8AC3-7FC913B45EA2</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42466A9A-5A96-F312-90C8-128BB94F0A9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AA2AF8B-64F3-4518-1868-1FFF91BF6578" name="produse_denumire_uk">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>898BEE0C-8C88-4DAD-296B-94C0096928D1</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D179B1F0-9ACE-289A-1C8D-41072215E445"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C4BE200-E21B-C768-43E4-183035823DB7" name="Produse__IDX">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9AA9857D-DE65-AE04-46C7-DD3E32D845BD</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B01F823D-98B0-8F8C-6B9F-BBC251B0E491"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BBA353E-23E2-4FB5-F268-A269642FF1BA" name="Relation_2">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>E1466C24-107B-6087-9116-327B4E700DDC</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24A910BC-2A78-6B5D-53D3-80FCBCF7E3EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3F4C2F4-5656-F156-A8B2-17754585444E" name="Relation_4">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>9AA9857D-DE65-AE04-46C7-DD3E32D845BD</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B01F823D-98B0-8F8C-6B9F-BBC251B0E491"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5659D290-39AF-F720-B31C-F6EA0104C46C" name="Relation_6">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>9F82C528-CD7C-3CC3-5119-BDBBD754B36A</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3ABC2EBA-9500-84AC-086C-5BFD946B7FCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

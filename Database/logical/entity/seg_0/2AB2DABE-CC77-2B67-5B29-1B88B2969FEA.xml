@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2AB2DABE-CC77-2B67-5B29-1B88B2969FEA" name="Proprietati">
+<createdBy>achir</createdBy>
+<createdTime>2022-11-17 17:33:00 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<engineerTo>
+<item key="F8271F90-36CC-FE7E-2255-5A15BFC0EAE9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Prop" id="5D192708-81D9-E7AE-D724-025B01BA6E76">
+<createdBy>achir</createdBy>
+<createdTime>2022-11-17 18:57:26 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<engineerTo>
+<item key="F8271F90-36CC-FE7E-2255-5A15BFC0EAE9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Denumire_Prop" id="F643CA9B-FFBD-D6DE-2F43-231FE47666F6">
+<createdBy>achir</createdBy>
+<createdTime>2022-11-17 18:58:11 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<engineerTo>
+<item key="F8271F90-36CC-FE7E-2255-5A15BFC0EAE9" value="true"/>
+</engineerTo>
+<constraintName>proprietati_denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Denumire_Prop)&gt;1 and regexp_like(Denumire_Prop, &apos;^+[ [:alnum:]_]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B1D2FCDB-AD9C-0E11-628E-C12EBA4C5D75" name="Proprietati PK">
+<createdBy>achir</createdBy>
+<createdTime>2022-11-17 18:57:55 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F8271F90-36CC-FE7E-2255-5A15BFC0EAE9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5D192708-81D9-E7AE-D724-025B01BA6E76</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="854FD0B5-E358-F580-568B-D890D40B7618" name="proprietati_denumire_uk">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-04 15:45:38 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<engineerTo>
+<item key="F8271F90-36CC-FE7E-2255-5A15BFC0EAE9" value="true"/>
+</engineerTo>
+<newElementsIDs>F643CA9B-FFBD-D6DE-2F43-231FE47666F6</newElementsIDs>
+<usedAttributes>
+<attributeRef>F643CA9B-FFBD-D6DE-2F43-231FE47666F6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

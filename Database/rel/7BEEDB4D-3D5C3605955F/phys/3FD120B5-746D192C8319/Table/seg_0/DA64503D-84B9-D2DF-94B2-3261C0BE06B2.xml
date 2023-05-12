@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="prod_prop" directorySegmentName="seg_0" id="DA64503D-84B9-D2DF-94B2-3261C0BE06B2">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_Prod" id="3FD29942-51C5-A1A8-3E18-B7DEEBA00297">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_val_prop" id="899FA0CF-4C3E-6ACD-8EB2-5A49299639E6">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Prod_Prop" id="934E6321-322B-B9EA-2374-62EE19647A62">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="ID_Prop" id="B3F977A6-9FC0-A5C2-5D9D-B551ACB278C4">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Relation_9" id="31E6FC48-DD8C-6FF2-1EEF-32D0F33BF94B">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Relation_10" id="756EC694-0E9B-64C4-4919-26F1C5BEDE25">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Relation_11" id="84C27144-F716-5505-CBEF-91A1CA406111">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="prod_prop_PK" id="B73678A5-BB1E-9831-ACBE-9A0F0BE918CD">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:27:48 UTC</createdTime>
+<ownerDesignName>V1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

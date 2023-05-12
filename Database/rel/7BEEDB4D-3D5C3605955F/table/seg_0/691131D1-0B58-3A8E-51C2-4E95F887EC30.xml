@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="691131D1-0B58-3A8E-51C2-4E95F887EC30" name="Categorie">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>5CA96467-0826-A5C9-FB8A-337F53D16587</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Cat" id="2732A258-2D09-6632-0ACF-56F001E50A47">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>4009B4A5-4C25-0DE7-F2BC-D1B64D902C84</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Denumire_Cat" id="10E0220B-751C-96C6-300C-06BA33872993">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>4C3DBDF7-1013-D3F5-ED96-B2CBBC76CF46</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<constraintName>cat_denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Denumire_Cat)&gt;3 and regexp_like(Denumire_Cat , &apos;^+[ [:alpha:]_]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descriere" id="D23D9A86-3445-34BE-23DD-64F461D0A9F5">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>34286874-5353-C9DE-9BFB-56A0AF4B2EB2</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="705DEACD-8BB6-0A1F-45F4-7B648C90FE80" name="Categorie_PK">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>8CBCB341-5F77-789C-CC0F-8E2F1FDF194F</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2732A258-2D09-6632-0ACF-56F001E50A47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0610F0AA-D9B4-B136-4D9D-32D2BAFA64BF" name="cat_denumire_uk">
+<createdBy>achir</createdBy>
+<createdTime>2022-12-14 19:26:26 UTC</createdTime>
+<generatorID>A8F08001-FFB9-195A-B31D-667347FBB901</generatorID>
+<ownerDesignName>V1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10E0220B-751C-96C6-300C-06BA33872993"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
